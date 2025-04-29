@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project 2 Report</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <small>Assignment 4</small>
+        Persuasive or Deceptive Visualization?
+      </h1>
+      <p><strong>Russel Luber</strong> — <em>rluber@ucsd.edu</em></p>
+    </header>
+
+    <main>
+      <h2>Proposition: Officers with more complaints face less accountability.</h2>
+
+      <section>
+        <h3>FOR the Proposition</h3>
+        <figure>
+          <img src="images/for1_viz.png" alt="Scatterplot: Complaints Stack Up" />
+          <figcaption>Scatterplot showing that officers with many complaints often have few confirmed violations, falling far below the line of perfect accountability.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+        <ul>
+          <li>Added a diagonal “perfect accountability” reference line, setting an ideal baseline. (Score: 1)</li>
+          <li>Plotted all officers with semi-transparent points to emphasize density and structural failure. (Score: 1.5)</li>
+          <li>Annotated outliers with many complaints but few confirmed violations, highlighting extremes. (Score: 1)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>AGAINST the Proposition</h3>
+        <figure>
+          <img src="images/against1_viz.png" alt="Bar Chart: More Complaints, More Accountability" />
+          <figcaption>Bar chart showing that officers with more complaints also tend to have a higher average number of confirmed violations.</figcaption>
+        </figure>
+
+        <p>Design Decisions and Rationale:</p>
+        <ul>
+          <li>Binned officers into complaint quintiles and computed average confirmed violations. (Score: 1)</li>
+          <li>Chose bar chart to present upward trend visually, implying increasing accountability. (Score: 1)</li>
+          <li>Used neutral ColorBrewer palette to project professionalism and readability. (Score: 1)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Final Reflection</h2>
+        <p>
+          This project made me realize how subtle design choices can dramatically shift the framing of a visualization. Even neutral-seeming decisions like adding a reference line or choosing a threshold embed specific expectations about what “accountability” should look like. Designing two opposing visualizations forced me to see how the same dataset can plausibly support contradictory interpretations.
+        </p>
+
+        <p>
+          One surprise was how easily “earnest” charts could still be highly persuasive without resorting to misleading practices. However, I also noticed how annotation, binning, and color framing naturally push readers toward certain conclusions. Ethical visualization, I learned, is less about avoiding persuasion altogether and more about signaling your framing honestly. Transparency about structure and aggregation choices is essential to maintaining fairness, especially on controversial topics like policing.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
