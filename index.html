@@ -14,13 +14,13 @@
     </header>
 
     <main>
-      <h2>Proposition: Officers with more complaints face less accountability.</h2>
+      <h2>Proposition: Officers with more complaints often face less accountability.</h2>
 
       <section>
         <h3>FOR the Proposition</h3>
         <figure>
           <img src="images/for1_viz.png" alt="Scatterplot: Complaints Stack Up" width="800" />
-          <figcaption>Scatterplot showing that officers with many complaints often have few confirmed violations, falling far below the line of ideal accountability.</figcaption>
+          <figcaption>Scatterplot showing that officers with many complaints often have few confirmed violations, falling far below the line of ideal accountability (the dotted line).</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
@@ -58,18 +58,35 @@
             </li>
           </ul>
           <li>Used neutral, professional color palette (ColorBrewer set2) for the bars to ensure readability.</li>
-          <li>Franed the title as a question rather than a conclusion to invite readers to question the proposition.</li>
+          <li>Framed the title as a question rather than a conclusion to invite readers to question the proposition.</li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
         <p>
-          This project made me deeply aware of how much framing and aggregation choices shape what a viewer takes away from a visualization. There really is just a garden of forking paths when it comes to design choices as a data analyst and visualizer. The same underlying data — in this case, NYPD officer complaints — can be used to argue opposing conclusions based on how it's grouped, binned, or annotated.
+          In this project, I tackled the proposition that "Officers with more complaints often face less accountability" by designing two opposing visualizations. 
+          It quickly became clear that even small design choices — framing a baseline, picking an axis scale, deciding when to bin — can dramatically influence a reader’s interpretation.
         </p>
 
         <p>
-          I found that even decisions I considered "neutral" in the moment introduced a framing effect. It became clear that rhetorical power often hides in unquestioned conventions.
+          My FOR visualization was a scatterplot mapping total complaints against confirmed violations for each officer. 
+          I added an ideal accountability line where every complaint would be substantiated.
+          Officers falling far below that line told a visual story of disconnect: complaints stacked up, but consequences didn't.
+          In doing so, I treated the proportion of substantiated complaints as a proxy for true accountability — a simplification, but a powerful one that helped surface the systemic gap the proposition pointed toward.
+        </p>
+
+        <p>
+          On the flip side, my AGAINST visualization grouped officers into complaint volume bins and plotted the average number of confirmed violations.
+          Binning cleaned up a lot of individual noise and let broader patterns show through.
+          As complaint volume rose, so did average accountability outcomes.
+          It wasn’t a perfect linear relationship, but the upward trend pushed against the idea that complaints are ignored wholesale.
+        </p>
+        <p>
+          What surprised me most was how "earnest" decisions could still be persuasive — or even rhetorical — depending on how they framed the data. 
+          In both visualizations, I made calls about what to center, what to compress, and what to highlight.
+          Ethical visualization isn’t about embodying neutrality; it’s about being honest about the story you're suggesting, and leaving space for the viewer to question it.
+          That’s the line I tried to walk.
         </p>
       </section>
     </main>
