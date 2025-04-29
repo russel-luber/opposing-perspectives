@@ -20,17 +20,19 @@
         <h3>FOR the Proposition</h3>
         <figure>
           <img src="images/for1_viz.png" alt="Scatterplot: Complaints Stack Up" width="800" />
-          <figcaption>Scatterplot showing that officers with many complaints often have few confirmed violations, falling far below the line of perfect accountability.</figcaption>
+          <figcaption>Scatterplot showing that officers with many complaints often have few confirmed violations, falling far below the line of ideal accountability.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
         <ul>
-          <li>Plotted all officers as dots and added a diagonal line representing perfect accountability \(one confirmed violation per complain\)</li>
+          <li>Encoded total complaints on the x-axis and substantiated complaints on the y-axis. Plotted all officers as dots and added a diagonal line representing ideal accountability (one confirmed/substantiated violation per complain)</li>
             <ul>
-              <li>The line assumes that every complaint <em>should</em> be substantiated, which is not necessarily a reasonable expectation. It imposes a moral baseline rather than an institutional one. In reality, there are such things are false reports of misconduct.</li>
+              <li>
+                The line assumes that every complaint <em>should</em> be substantiated, which is not necessarily a reasonable expectation. It imposes a moral baseline rather than an institutional one. In reality, there are such things are false reports of misconduct. However, it does make you question why there are so many unsubstantiated complaints compared to substantiated ones, which opens the door to further analysis.
+              </li>
             </ul>
-          <li>I used transparent points and full axis scales to emphasize the volume of low-accountability cases. </li>
-          <li>Annotated outliers with many complaints but few confirmed violations, highlighting extremes.</li>
+          <li>Used transparent points and full axis scales to emphasize the volume of low-accountability cases.</li>
+          <li>Added a textual annotation to highlight outliers (officers with 45+ complaints but few confirmed violations). This helps the reader interpret what is going on in the scatterplot.</li>
         </ul>
       </section>
 
@@ -43,9 +45,20 @@
 
         <p>Design Decisions and Rationale:</p>
         <ul>
-          <li>Binned officers into complaint quintiles and computed average confirmed/substantiated violations.</li>
-          <li>Chose bar chart to present upward trend visually, implying increasing accountability. (Score: 1)</li>
-          <li>Used neutral ColorBrewer palette to embody professionalism and readability.</li>
+          <li>Encoded complaints volumen into quantile bins (fifth quantiles) along the x-axis.</li>
+          <ul>
+            <li>
+              Binning officers into quantiles normalizes the distribution and enables fair comparison across complaint volumes. It makes patterns more visible without being distorted by outliers.
+            </li>
+          </ul>
+          <li>Mapped average number of confirmed/substantiated violations per bin to the height of the bars.</li>
+          <ul> 
+            <li>
+              The bar height provides a clear, intuitive encoding of accountability levels. It visually reinforces the message that more complaints correlate with more confirmed violations.
+            </li>
+          </ul>
+          <li>Used neutral, professional color palette (ColorBrewer set2) for the bars to ensure readability.</li>
+          <li>Franed the title as a question rather than a conclusion to invite readers to question the proposition.</li>
         </ul>
       </section>
 
