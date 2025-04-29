@@ -25,35 +25,38 @@
 
         <p>Design Decisions and Rationale:</p>
         <ul>
-          <li>Added a diagonal “perfect accountability” reference line, setting an ideal baseline. (Score: 1)</li>
-          <li>Plotted all officers with semi-transparent points to emphasize density and structural failure. (Score: 1.5)</li>
-          <li>Annotated outliers with many complaints but few confirmed violations, highlighting extremes. (Score: 1)</li>
+          <li>Plotted all officers as dots and added a diagonal line representing perfect accountability \(one confirmed violation per complain\)</li>
+            <ul>
+              <li>The line assumes that every complaint <em>should</em> be substantiated, which is not necessarily a reasonable expectation. It imposes a moral baseline rather than an institutional one. In reality, there are such things are false reports of misconduct.</li>
+            </ul>
+          <li>I used transparent points and full axis scales to emphasize the volume of low-accountability cases. </li>
+          <li>Annotated outliers with many complaints but few confirmed violations, highlighting extremes.</li>
         </ul>
       </section>
 
       <section>
         <h3>AGAINST the Proposition</h3>
         <figure>
-          <img src="images/against1_viz.png" alt="Bar Chart: More Complaints, More Accountability" width="800" />
+          <img src="images/against1_viz.png" alt="Bar Chart: More Complaints, More Accountability?" width="800" />
           <figcaption>Bar chart showing that officers with more complaints also tend to have a higher average number of confirmed violations.</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
         <ul>
-          <li>Binned officers into complaint quintiles and computed average confirmed violations. (Score: 1)</li>
+          <li>Binned officers into complaint quintiles and computed average confirmed/substantiated violations.</li>
           <li>Chose bar chart to present upward trend visually, implying increasing accountability. (Score: 1)</li>
-          <li>Used neutral ColorBrewer palette to project professionalism and readability. (Score: 1)</li>
+          <li>Used neutral ColorBrewer palette to embody professionalism and readability.</li>
         </ul>
       </section>
 
       <section>
         <h2>Final Reflection</h2>
         <p>
-          This project made me realize how subtle design choices can dramatically shift the framing of a visualization. Even neutral-seeming decisions like adding a reference line or choosing a threshold embed specific expectations about what “accountability” should look like. Designing two opposing visualizations forced me to see how the same dataset can plausibly support contradictory interpretations.
+          This project made me deeply aware of how much framing and aggregation choices shape what a viewer takes away from a visualization. There really is just a garden of forking paths when it comes to design choices as a data analyst and visualizer. The same underlying data — in this case, NYPD officer complaints — can be used to argue opposing conclusions based on how it's grouped, binned, or annotated.
         </p>
 
         <p>
-          One surprise was how easily “earnest” charts could still be highly persuasive without resorting to misleading practices. However, I also noticed how annotation, binning, and color framing naturally push readers toward certain conclusions. Ethical visualization, I learned, is less about avoiding persuasion altogether and more about signaling your framing honestly. Transparency about structure and aggregation choices is essential to maintaining fairness, especially on controversial topics like policing.
+          I found that even decisions I considered "neutral" in the moment introduced a framing effect. It became clear that rhetorical power often hides in unquestioned conventions.
         </p>
       </section>
     </main>
